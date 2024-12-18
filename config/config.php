@@ -22,7 +22,7 @@ if (ENVIRONMENT === 'production') {
     define('DB_USER', getenv('DB_USER') ?: 'root');
     define('DB_PASS', getenv('DB_PASSWORD') ?: '');
     define('DB_NAME', getenv('DB_NAME') ?: 'carteira_db');
-    define('BASE_URL', '/carteira');
+    define('BASE_URL', getenv('BASE_URL') ?: '/carteira');
     
     // Habilitar exibição de erros em desenvolvimento
     error_reporting(E_ALL);
