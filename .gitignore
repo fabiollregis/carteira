@@ -1,0 +1,8 @@
+.env
+vendor/
+node_modules/
+*.log
+.vscode/
+.idea/
+*.zip
+config/database.php
